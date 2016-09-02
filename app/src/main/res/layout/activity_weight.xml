@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/white"
+android:orientation="vertical"
+android:weightSum="1">
+
+<!--custom toolbar-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.44">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_alignBottom="@+id/view_dosen"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_marginBottom="67dp"
+        android:background="@color/hijau"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="@string/lecturer_name"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/view_dosen"
+        android:layout_marginTop="69dp"
+        android:background="@color/biru_langit"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_dosen"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/firts"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="5dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view_dosen"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/textView3"
+        android:gravity="center"
+        android:text="RABU"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:gravity="center"
+        android:text="JAM WIB"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="IP ADRESS"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/textView3c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/textView3a"
+        android:gravity="center"
+        android:text="IP ADRESS"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/textView3a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignTop="@+id/textView3b"
+        android:gravity="center"
+        android:text="IP ADRESS"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView3a"
+        android:layout_toStartOf="@+id/textView3a"
+        android:gravity="center"
+        android:text="29 Januari 2016"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.31"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@color/biru_tua"
+                android:text="@string/btn_checkIn"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/merah"
+                android:text="@string/btn_checkOut"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bakwhite"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp">
+
+            <Button
+                android:id="@+id/btn_breakIn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@color/hijau"
+                android:text="@string/btn_breakIn"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/biru_langit"
+                android:text="@string/btn_BreakOut"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+</RelativeLayout>
+
+
+</LinearLayout>

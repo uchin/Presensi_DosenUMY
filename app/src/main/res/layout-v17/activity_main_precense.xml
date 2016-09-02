@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/hijau"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8">
+
+
+                <TextView
+                    android:id="@+id/dosen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:text="Ir. Nama Dosen Teladan M.Eng"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/prodi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:text="Nama Prodi Dosen"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@+id/view_dosen"
+                    android:layout_marginTop="75dp"
+                    android:background="@color/biru_langit" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/view_dosen"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/firts"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="6dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:background="@color/biru_langit"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextClock
+                    android:id="@+id/jam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:format12Hour="@null"
+                    android:format24Hour="kk:mm:ss"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="52sp"
+                    android:textStyle="bold"
+                    android:timeZone="GMT+07:00" />
+
+                <TextClock
+                    android:id="@+id/tanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:format12Hour="@null"
+                    android:format24Hour="EEEE dd MMMM yyyy"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:timeZone="GMT+07:00" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="@color/biru_langit"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCeckOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/hijau"
+                android:text="@string/btn_checkOut"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnCeckIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/merah"
+                android:text="@string/btn_checkIn"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/biru_tua"
+                android:text="DETAILS"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

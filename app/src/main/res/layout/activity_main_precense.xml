@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/hijau"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="150dp"
+                    android:gravity="center"
+                    android:text="@string/lecturer_name"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@+id/view_dosen"
+                    android:layout_marginTop="76dp"
+                    android:background="@color/biru_langit" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view_dosen"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/firts"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:background="@color/biru_langit"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Rabu"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/title_ip"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_marginEnd="20dp"
+                    android:text="Jam WIB"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="29 Januari 2016"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:text="@string/get_ip"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextClock
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:layout_marginEnd="20dp"
+                    android:format24Hour="hh:mm:ss"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@color/biru_tua"
+                android:text="@string/btn_checkIn"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/merah"
+                android:text="@string/btn_checkOut"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@color/hijau"
+                android:text="@string/btn_breakIn"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/biru_langit"
+                android:text="@string/btn_breakIn"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="gray">#c8c5c5</color>
+    <color name="et_hint">#746467</color>
+    <color name="hitam">#24282b</color>
+    <color name="merah">#de183e</color>
+    <color name="hijau">#0e9158</color>
+    <color name="biru_langit">#46aaf0</color>
+    <color name="biru_tua">#1169a5</color>
+</resources>
