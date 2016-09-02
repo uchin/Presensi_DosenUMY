@@ -25,5 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     //compile 'com.cleveroad:slidingtutorial:0.9.5'
-    compile 'com.android.support:support-v4:24.2.0'
+    //compile 'com.android.support:support-v4:24.2.0'
 }
