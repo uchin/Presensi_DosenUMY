@@ -1,4 +1,4 @@
-package com.bsi.myapplication;
+package com.bsi.presensidosen;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
