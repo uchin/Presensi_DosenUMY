@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "814475494623",
+    "firebase_url": "https://presensidosen.firebaseio.com",
+    "project_id": "presensidosen",
+    "storage_bucket": "presensidosen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814475494623:android:c73defb61e596202",
+        "android_client_info": {
+          "package_name": "com.bsi.presensidosen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814475494623-ml3g6lg3emm96gsjo65pn5tahiud002f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bsi.presensidosen",
+            "certificate_hash": "971660C41DFE25952D1F919E884CD77B374694C2"
+          }
+        },
+        {
+          "client_id": "814475494623-siv03hq2vnortfkehmovtjabrh59du0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrODGlTUrIjvOg9HL3ytPt9mGLO0g0wrM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814475494623-siv03hq2vnortfkehmovtjabrh59du0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

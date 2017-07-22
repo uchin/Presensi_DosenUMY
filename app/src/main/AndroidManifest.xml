@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bsi.myapplication">
+    package="com.bsi.presensidosen">
+
+    <!--<receiver android:name=".NetworkStateReceiver">
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>-->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true"
+        />
 
     <application
         android:allowBackup="true"
@@ -12,6 +26,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait"
@@ -24,6 +39,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
+            android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/LoginTheme" />
         <activity
@@ -36,20 +52,32 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bsi.myapplication.MainPrecense" />
+                android:value="com.bsi.presensidosen.MainPrecense" />
         </activity>
-        <activity android:name=".HelpActivity">
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.bsi.myapplication.MainPrecense" />
+                android:value="com.bsi.presensidosen.LoginActivity" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="lauch.HelpActivity" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Connect365"
             android:screenOrientation="portrait" />
-        <activity android:name=".TermOfService">
+        <activity
+            android:name=".TermOfService"
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
+                android:value="com.bsi.presensidosen.LoginActivity" />
 
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -59,10 +87,12 @@
                 <data android:scheme="lauch.TermOfService" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrivacyPolicy">
+        <activity
+            android:name=".PrivacyPolicy"
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
+                android:value="com.bsi.presensidosen.LoginActivity" />
 
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -72,6 +102,60 @@
                 <data android:scheme="lauch.PrivacyPolicy" />
             </intent-filter>
         </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bsi.presensidosen.MainPrecense" />
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bsi.presensidosen.LoginActivity" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="lauch.WebViewActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WebViewUmy"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bsi.presensidosen.LoginActivity" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="launch" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WebViewPanduan"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bsi.presensidosen.LoginActivity" />
+        </activity>
     </application>
+
+
 
 </manifest>

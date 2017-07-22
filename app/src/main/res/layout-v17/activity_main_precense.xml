@@ -30,7 +30,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="8">
 
@@ -55,12 +55,22 @@
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
+                <TextView
+                    android:id="@+id/ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="120dp"
+                    android:text="Nama Prodi Dosen"
+                    android:textAlignment="center"
+                    android:textColor="@color/kuning"
+                    android:textSize="14sp" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:layout_alignTop="@+id/view_dosen"
                     android:layout_marginTop="75dp"
-                    android:background="@color/biru_langit" />
+                    android:background="@color/kuning" />
 
                 <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/view_dosen"
@@ -69,9 +79,9 @@
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    android:src="@drawable/firts"
-                    app:civ_border_color="@color/white"
-                    app:civ_border_width="6dp" />
+                    android:src="@drawable/user"
+                    app:civ_border_color="@color/kuning"
+                    app:civ_border_width="8dp" />
 
             </RelativeLayout>
         </LinearLayout>
@@ -80,13 +90,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="12"
-            android:background="@color/biru_langit"
+            android:background="@color/kuning"
             android:orientation="vertical">
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical">-->
 
                 <TextClock
                     android:id="@+id/jam"
@@ -97,7 +107,7 @@
                     android:format12Hour="@null"
                     android:format24Hour="kk:mm:ss"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/hijau"
                     android:textSize="52sp"
                     android:textStyle="bold"
                     android:timeZone="GMT+07:00" />
@@ -110,11 +120,31 @@
                     android:format12Hour="@null"
                     android:format24Hour="EEEE dd MMMM yyyy"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/hijau"
                     android:textSize="18sp"
                     android:timeZone="GMT+07:00" />
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/jamServer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/hijau"
+                    android:textSize="52sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tanggalserver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/hijau" />
+
+            <!--</LinearLayout>-->
 
         </LinearLayout>
     </LinearLayout>
@@ -123,7 +153,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="6"
-        android:background="@color/biru_langit"
+        android:background="@color/kuning"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -139,6 +169,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@color/hijau"
+                android:visibility="gone"
                 android:text="@string/btn_checkOut"
                 android:textColor="@color/white"
                 android:textSize="22sp" />
@@ -149,6 +180,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
+                android:visibility="visible"
                 android:background="@color/merah"
                 android:text="@string/btn_checkIn"
                 android:textColor="@color/white"
@@ -158,12 +190,25 @@
                 android:id="@+id/btnDetails"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="0dp"
                 android:layout_weight="1"
+                android:visibility="visible"
                 android:background="@color/biru_tua"
                 android:text="DETAILS"
                 android:textColor="@color/white"
                 android:textSize="22sp" />
+
+            <!--<Button
+                android:id="@+id/btnDetailsGone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="@color/common_google_signin_btn_text_dark_disabled"
+                android:text="RIWAYAT PRESENSI"
+                android:textColor="@color/kuning"
+                android:textSize="22sp" />-->
         </LinearLayout>
 
     </LinearLayout>

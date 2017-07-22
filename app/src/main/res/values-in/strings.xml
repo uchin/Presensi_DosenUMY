@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Presensi Dosen</string>
-    <string name="action_exit" translatable="false">Keluar</string>
+    <string name="app_name">Presensi Dosen UMY</string>
     <string name="action_help">FAQ</string>
     <string name="yes">Ya</string>
-    <string name="username">Pengguna</string>
+    <string name="username">email@umy.ac.id</string>
     <string name="privacy_policy">LOGIN berarti Anda setuju dengan Persaratan Layanan  dan Kebijakan Privacy</string>
     <string name="forgot_password">Lupa Password?</string>
-    <string name="hint_pass">Sandi</string>
-    <string name="login">MASUK</string>
+    <string name="hint_pass">Password</string>
+    <string name="login">LOGIN</string>
     <string name="member_login">Login Dosen</string>
     <string name="no">Tidak</string>
     <string name="quit">Keluar Aplikasi</string>
@@ -23,6 +22,14 @@
     <string name="help">FAQ</string>
     <string name="lecturer_name">Nama Dosen</string>
     <string name="sliderImg">Panduan</string>
-    <string name="TOS">Persaratan Layanan</string>
+    <string name="TOS">Ketentuan Layanan</string>
     <string name="PP">Kebijakan Privasi</string>
+    <string name="pwd_belum_benar">Mohon ma\'af username dan password yang Anda masukkan belum benar, Silahkan ulangi lagi</string>
+    <string name="pwd_harus_isi">Username atau Password tidak Boleh Kosong.</string>
+    <string name="ok">OK</string>
+    <string name="title_login_gagal">Login Gagal!</string>
+    <string name="confirm">Ya</string>
+    <string name="cancel">Tidak</string>
+    <string name="filterAlphanumeric">\@.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-#*</string>
+    <string name="text_html">"<![CDATA[         <h5>FAQ?</h5>         <p> FAQ merupakan kumpulan Pertanyaan - pertanyaan yang sering muncul terkait topik tertentu, dengan demkian FAQ di sini berarti hal-al yang sering ditanyakan terkait Aplikasi presensi yang sedang anda gunakan saat ini</p>           <h4>Dengan apa saya login?</h4>          <p>Anda bisa login, untuk username gunakan email umy dan password adalah password email dan password presensi<p>                    <h4>jika Saya belum punya email dan password?</h4>          <p> untuk pembuatan email dan password atau jika lupa, silahkan datang ke Kantor BSI umy Ext.164</P>                    <h4>Apakah haru koneksi internet?</h4>          Aplikasi ini tidak mengharuskan anda untuk koneksi internet jika anda berada di wilayah jaringan UMY, cukup aktifkan wifi                    ]]> "</string>
 </resources>

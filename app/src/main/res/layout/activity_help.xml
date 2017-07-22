@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bsi.myapplication.HelpActivity">
+    tools:context="com.bsi.presensidosen.HelpActivity"
+    android:orientation="vertical">
     <include
         android:id="@+id/custom_toolbar"
         layout="@layout/custom_toolbar" />
 
-    <ScrollView
-        android:layout_below="@+id/custom_toolbar"
+    <ProgressBar
+        android:id="@+id/progressBarWebfaq"
+        style="@style/CustomProgressBar"
+        android:background="@color/gray"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="4dp"/>
 
-    <TextView
-        android:id="@+id/text_html"
-        android:layout_width="fill_parent"
-        android:textSize="16sp"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:text="@string/app_name" />
-    </ScrollView>
-</RelativeLayout>
+    <WebView
+        android:id="@+id/webViewFaq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

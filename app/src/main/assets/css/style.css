@@ -1,0 +1,24 @@
+.body{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.sesuai img{
+    width: 50px !important;
+}
+
+.panduan{
+    margin: 15px 0px 15px 0px;
+}
+
+p{
+    text-align: justify;
+}
+
+.panduan img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.panduan ul{
+    margin-left: -15px !important;
+}

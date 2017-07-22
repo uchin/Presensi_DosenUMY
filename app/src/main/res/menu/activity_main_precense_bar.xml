@@ -3,11 +3,20 @@
         android:icon="@drawable/user"
         android:title="@string/action_help"/>
 
-    <item android:id="@+id/sliderImg"
-        android:title="@string/sliderImg"/>
+    <item android:id="@+id/tutorial"
+        android:title="Panduan Pengguna"/>
 
     <item android:id="@+id/detailPresen"
-        android:title="@string/detailPresen"/>
+        android:title="Detail Presensi"/>
+
+    <item android:id="@+id/about"
+        android:title="Tentang Aplikasi"/>
+
+    <item android:id="@+id/refesh"
+        android:title="Refresh"/>
+
+    <item android:id="@+id/sembunyikan"
+        android:title="Tutup Aplikasi"/>
 
     <item android:id="@+id/action_exit"
         android:title="@string/action_exit"/>

@@ -3,14 +3,14 @@
 
 
     <string name="action_help">FAQ</string>
-    <string name="action_exit">Quit</string>
+    <string name="action_exit" translatable="false">Logout</string>
 
 
-    <string name="app_name">Presensi Dosen</string>
+    <string name="app_name">Presensi Dosen UMY</string>
     <string name="member_login">Member Login</string>
-    <string name="username">Username</string>
+    <string name="username">email@umy.ac.id</string>
     <string name="hint_pass">Password</string>
-    <string name="login" translatable="false">LOGIN</string>
+    <string name="login">LOGIN</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="TOS">Term Of Service</string>
     <string name="PP">Privacy Policy</string>
@@ -19,9 +19,9 @@
     <string name="privacy_policy">Dengan LOGIN berarti Anda setuju dengan Term of Service dan Privacy Policy</string>
 
     <string name="get_ip">IP Here</string>
-    <string name="title_ip">IP Address</string>
+    <string name="title_ip" translatable="false">IP Address</string>
     <string name="lecturer_name">Lecture Name</string>
-    <string name="umy">UMY</string>
+    <string name="umy" translatable="false">UMY</string>
     <string name="help">FAQ</string>
     <string name="sliderImg">How To</string>
 
@@ -29,7 +29,7 @@
     <!--dialog-->
     <string name="quit">Quit</string>
     <string name="yes">Yes</string>
-    <string name="really_quit">Really Quit</string>
+    <string name="really_quit">Do you want to exit this application?</string>
     <string name="no">No</string>
     <string name="btn_checkIn">CHECK-IN</string>
     <string name="btn_checkOut">CHECK-OUT</string>
@@ -60,5 +60,14 @@
     <string name="panduan">How to Use This Aplication</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pwd_belum_benar">The Username or Password You have entered is incorrect, Please try again.</string>
+    <string name="pwd_harus_isi">Username Or Password Cannot be empty.</string>
+    <string name="ok">OK</string>
+    <string name="title_login_gagal">Login Failed!</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="cancel">CANCEL</string>
+    <string name="filterAlphanumeric">\@.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-#*</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>
